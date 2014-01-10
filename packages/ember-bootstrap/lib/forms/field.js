@@ -62,7 +62,7 @@ Bootstrap.Forms.Field = Ember.View.extend({
 
   errorsView: Ember.View.extend({
     tagName: 'div',
-    classNames: ['errors', 'help-inline'],
+    classNames: ['errors', 'help-block'],
     template: Ember.Handlebars.compile('{{view.message}}'),
 
     message: Ember.computed(function(key, value) {
