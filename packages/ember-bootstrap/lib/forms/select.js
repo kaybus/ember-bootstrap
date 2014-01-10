@@ -13,6 +13,7 @@ Bootstrap.Forms.Select = Bootstrap.Forms.Field.extend({
     promptBinding:          'parentView.prompt',
     multipleBinding:        'parentView.multiple',
     disabledBinding:        'parentView.disabled',
+    classNames:             ['form-control'],
     classNameBindings:      ['parentView.inputClassNames'],
     name: Ember.computed(function() {
       return this.get('parentView.name') || this.get('parentView.label');
