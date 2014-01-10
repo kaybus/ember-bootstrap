@@ -1,5 +1,6 @@
 Bootstrap.Forms.Checkbox = Bootstrap.Forms.Field.extend({
-
+  classNames: ['checkbox'],
+  
   inputField: Ember.Checkbox.extend({
     attributeBindings: ['name'],
     checkedBinding:   'parentView.checked',
