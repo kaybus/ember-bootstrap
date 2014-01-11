@@ -82,6 +82,9 @@ Bootstrap.Forms.Field = Ember.View.extend({
           object = parent.get('context');
         }
 
+        // use errorKey, if set
+        fieldName = parent.get('errorKey') || fieldName;
+
         if (object && !object.get('isValid')) {
           var errors = object.get('errors');
 
